@@ -4,7 +4,7 @@ const app = express();
 const axios = require("axios");
 const cheerio = require("cheerio");
 
-/*const url = "https://halkarz.com";
+const url = "https://halkarz.com";
 
 
 async function getData(){
@@ -28,13 +28,12 @@ async function getData(){
     }
     return arr;
 }
-*/
+
 app.get("/api/", function (req, res) {
-    /*let data = getData();
+    let data = getData();
     data.then(function(result){
         result = JSON.stringify(result);
-        res.send(result);
-    });*/
+    });
     res.send("ok");
 });
 
