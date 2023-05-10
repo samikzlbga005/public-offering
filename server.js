@@ -32,6 +32,7 @@ async function getData(){
 app.get("/api/", function (req, res) {
     let data = getData();
     data.then(function(result){
+        result = JSON.stringify(result);
         res.send(result);
     });
 });
